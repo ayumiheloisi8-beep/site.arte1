@@ -1,0 +1,254 @@
+/* Estilos do site Arte na Escola */
+:root {
+  --roxo-link: #7027a4;
+  --roxo-hover: #4f1978;
+  --amarelo-manteiga: #F6E7A1;
+  --verde-salvia: #A8B89A;
+  --lilas: #C69BCB;
+  --azul-acinzentado: #7899B8;
+  --texto: #303846;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, var(--verde-salvia) 0%, var(--amarelo-manteiga) 42%, #fff8d6 100%);
+  background-attachment: fixed;
+}
+
+a {
+  color: #7027a4 !important;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover,
+a:focus-visible {
+  color: #4f1978 !important;
+}
+
+.navbar {
+  background: rgba(168, 184, 154, 0.96);
+  border-bottom: 1px solid rgba(48, 56, 70, 0.18);
+  box-shadow: 0 2px 10px rgba(48, 56, 70, 0.12);
+}
+
+.navbar-brand,
+.navbar .nav-link {
+  color: #7027a4 !important;
+  font-weight: 600;
+}
+
+.navbar-brand:hover,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+  color: #4f1978 !important;
+}
+
+.navbar-toggler {
+  border-color: rgba(112, 39, 164, 0.4);
+}
+
+.destaque {
+  background: linear-gradient(125deg, rgba(246, 231, 161, 0.98), rgba(255, 248, 214, 0.96));
+  border: 1px solid rgba(120, 153, 184, 0.3);
+  box-shadow: 0 10px 28px rgba(48, 56, 70, 0.15);
+}
+
+.destaque h1 {
+  margin-bottom: 1rem;
+  font-weight: 750;
+}
+
+.imagem-noite {
+  max-height: 430px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(45, 32, 0, 0.22);
+}
+
+.cards-centralizados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 330px));
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.25rem;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, var(--verde-salvia) 0%, var(--amarelo-manteiga) 52%, var(--lilas) 100%);
+}
+
+.card-atalho {
+  min-height: 190px;
+  border: 1px solid rgba(112, 39, 164, 0.28);
+  border-radius: 1rem;
+  background: linear-gradient(155deg, rgba(198, 155, 203, 0.9) 0%, rgba(255, 250, 232, 0.96) 100%);
+  box-shadow: 0 8px 22px rgba(48, 56, 70, 0.16);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.card-atalho:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(70, 49, 0, 0.18);
+}
+
+.card-atalho .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+
+.card-atalho p {
+  flex: 1;
+}
+
+.link-atalho,
+.link-mais {
+  color: #7027a4 !important;
+  font-weight: 700;
+}
+
+.bloco-recursos,
+.pagina-conheca {
+  background: rgba(120, 153, 184, 0.82);
+  border: 1px solid rgba(48, 56, 70, 0.2);
+  box-shadow: 0 8px 22px rgba(48, 56, 70, 0.16);
+}
+
+.lista-recursos li {
+  margin-bottom: 0.35rem;
+}
+
+.recursos-centralizados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 300px));
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.conteudo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.conteudo-card {
+  overflow: hidden;
+  border: 1px solid rgba(112, 39, 164, 0.25);
+  border-radius: 1rem;
+  background: linear-gradient(155deg, rgba(198, 155, 203, 0.92) 0%, rgba(246, 231, 161, 0.94) 100%);
+  box-shadow: 0 8px 22px rgba(48, 56, 70, 0.16);
+}
+
+.conteudo-card img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.conteudo-card .card-body {
+  padding: 1.25rem;
+}
+
+.quiz-form {
+  margin-top: 1.5rem;
+}
+
+.quiz-question {
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(112, 39, 164, 0.24);
+  border-radius: 1rem;
+  background: linear-gradient(155deg, rgba(198, 155, 203, 0.82), rgba(246, 231, 161, 0.88));
+}
+
+.quiz-question legend {
+  float: none;
+  width: auto;
+  margin-bottom: 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.quiz-question label {
+  display: block;
+  margin: 0.55rem 0;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.quiz-question label:hover {
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.quiz-question input {
+  margin-right: 0.5rem;
+  accent-color: var(--roxo-link);
+}
+
+.btn-quiz {
+  color: #ffffff !important;
+  background: var(--azul-acinzentado);
+  border-color: var(--azul-acinzentado);
+  font-weight: 700;
+}
+
+.btn-quiz:hover,
+.btn-quiz:focus-visible {
+  color: #ffffff !important;
+  background: #5d7f9f;
+  border-color: #5d7f9f;
+}
+
+.resultado-quiz {
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  font-weight: 700;
+}
+
+.resultado-sucesso {
+  background: var(--verde-salvia);
+}
+
+.resultado-alerta {
+  background: var(--amarelo-manteiga);
+}
+
+.recurso-card {
+  padding: 1.25rem;
+  border: 1px solid rgba(112, 39, 164, 0.18);
+  border-radius: 0.85rem;
+  background: rgba(246, 231, 161, 0.92);
+}
+
+.recurso-card h2 {
+  font-size: 1.15rem;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: #303846;
+  background: rgba(168, 184, 154, 0.92);
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
